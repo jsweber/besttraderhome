@@ -1,0 +1,34 @@
+{
+  "name": "besttraderhome",
+  "version": "1.0.0",
+  "description": "is ding and I first financial project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node app.js",
+    "build": "set NODE_ENV=production&&node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jsweber/besttraderhome.git"
+  },
+  "keywords": [
+    "nodejs",
+    "finance",
+    "study"
+  ],
+  "author": "du and ding",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsweber/besttraderhome/issues"
+  },
+  "homepage": "https://github.com/jsweber/besttraderhome#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookies": "^0.6.1",
+    "express": "^4.14.0",
+    "markdown": "^0.5.0"
+  },
+  "devDependencies": {
+    "mysql": "^2.13.0"
+  }
+}
