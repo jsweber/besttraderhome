@@ -27,7 +27,7 @@ connection.connect((err)=>{
 });
 
 app.get("/test",function(req,res){
-    connection.query("select * from users limit 2",(err,rows,fields)=>{
+    connection.query("select * from users limit 3",(err,rows,fields)=>{
         connection.end();
         if(!err){
             rows.forEach((row)=>{
@@ -40,9 +40,9 @@ app.get("/test",function(req,res){
             res.json({code:201});
         }
     });
-
-    
 });
+
+app.use("/api",require("./router/api"));
 
 //app.listen(port, [hostname], [backlog], [callback])
 app.listen(3000,function(){

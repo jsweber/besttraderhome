@@ -4,7 +4,7 @@
   "description": "is ding and I first financial project",
   "main": "index.js",
   "scripts": {
-    "dev": "node app.js",
+    "dev": "nodemon app.js",
     "build": "set NODE_ENV=production&&node app.js"
   },
   "repository": {
@@ -29,6 +29,7 @@
     "markdown": "^0.5.0"
   },
   "devDependencies": {
-    "mysql": "^2.13.0"
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0"
   }
 }
