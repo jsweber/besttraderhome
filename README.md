@@ -1,18 +1,9 @@
 # besttraderhome
-supervisor  用于监听文件改变后重启服务器，方便开发
+besttraderhome项目架构：
+此项目讲采取前后端分离开发，为了保持独立性，项目前后端各一个工作目录。
+前端利用vue-cli生成工作目录，
+后端采用此开发环境，模板引擎主要是为了方便接口测试，和一些特殊页面不方便做成spg。
 
-//要监控的文件夹或js文件，默认为'.'
--w|—watch
-//要忽略监控的文件夹或js文件  
--i|—ignore
-//监控文件变化的时间间隔（周期），默认为Node.js内置的时间
--p|—poll-interval
-//要监控的文件扩展名，默认为'node|js'
--e|—extensions
-//要执行的主应用程序，默认为'node'
--x|—exec
-//开启debug模式（用—debug flag来启动node）
-—debug
-//安静模式，不显示DEBUG信息
--q|—quiet
+nodemon用于监听文件变化，然后重启node
+具体请看：https://github.com/remy/nodemon/
 
